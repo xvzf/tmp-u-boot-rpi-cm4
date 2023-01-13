@@ -21,6 +21,8 @@ iproc_rng200-rng      brcm,bcm2711-rng200
 lan78xx_eth
 mmc_blk
 mmc_bootdev           u-boot,bootdev-mmc
+nvme
+nvme-blk
 pci_bridge_drv        pci-bridge
 pci_generic_drv       pci-generic
 pcie_brcm             brcm,bcm2711-pcie
@@ -46,7 +48,6 @@ simple_panel          simple-panel
                       boe,nv101wxmn51
 smsc95xx_eth
 sysinfo_smbios        u-boot,sysinfo-smbios
-system_bootdev        u-boot,bootdev-system
 usb_bootdev           u-boot,bootdev-usb
 usb_dev_generic_drv
 dwc2_usb              brcm,bcm2835-usb

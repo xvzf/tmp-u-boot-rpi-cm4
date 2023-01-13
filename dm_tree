@@ -188,7 +188,7 @@
  gpio          0  [   ]   gpio_bcm2835          |   |   `-- gpio_bcm2835
  serial        0  [ + ]   serial_pl01x          |   |-- serial@7e201000
  simple_bus    1  [   ]   simple_bus            |   |-- avs-monitor@7d5d2000
- rng           0  [   ]   iproc_rng200-rng      |   |-- rng@7e104000
+ rng           0  [ + ]   iproc_rng200-rng      |   |-- rng@7e104000
  simple_bus    2  [   ]   simple_bus            |   |-- firmware
  reset         0  [   ]   raspberrypi-reset     |   |   `-- reset
  mmc           0  [ + ]   sdhci-bcm2835         |   |-- mmcnr@7e300000
@@ -198,21 +198,23 @@
  vidconsole    0  [ + ]   vidconsole0           |       `-- fb.vidconsole0
  simple_bus    3  [ + ]   simple_bus            |-- emmc2bus
  mmc           1  [ + ]   sdhci-bcm2835         |   `-- mmc@7e340000
- blk           1  [ + ]   mmc_blk               |       |-- mmc@7e340000.blk
- partition     0  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:1
- partition     1  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:2
- partition     2  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:3
- partition     3  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:4
- partition     4  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:5
- partition     5  [ + ]   blk_partition         |       |   `-- mmc@7e340000.blk:6
+ blk           1  [   ]   mmc_blk               |       |-- mmc@7e340000.blk
  bootdev       1  [   ]   mmc_bootdev           |       `-- mmc@7e340000.bootdev
  simple_bus    4  [ + ]   simple_bus            |-- scb
- pci           0  [   ]   pcie_brcm             |   |-- pcie@7d500000
+ pci           0  [ + ]   pcie_brcm             |   |-- pcie@7d500000
+ pci           1  [ + ]   pci_bridge_drv        |   |   `-- pci_0:0.0
+ nvme          0  [ + ]   nvme                  |   |       `-- nvme#0
+ blk           2  [ + ]   nvme-blk              |   |           `-- nvme#0.blk#1
+ partition     0  [ + ]   blk_partition         |   |               |-- nvme#0.blk#1:1
+ partition     1  [ + ]   blk_partition         |   |               |-- nvme#0.blk#1:2
+ partition     2  [ + ]   blk_partition         |   |               |-- nvme#0.blk#1:3
+ partition     3  [ + ]   blk_partition         |   |               |-- nvme#0.blk#1:4
+ partition     4  [ + ]   blk_partition         |   |               |-- nvme#0.blk#1:5
+ partition     5  [ + ]   blk_partition         |   |               `-- nvme#0.blk#1:6
  ethernet      0  [ + ]   eth_bcmgenet          |   `-- ethernet@7d580000
  bootdev       2  [   ]   eth_bootdev           |       `-- ethernet@7d580000.bootdev
  simple_bus    5  [   ]   simple_bus            |-- v3dbus
  bootstd       0  [   ]   bootstd_drv           `-- bootstd
  bootmeth      0  [   ]   bootmeth_distro           |-- distro
  bootmeth      1  [   ]   bootmeth_efi              |-- efi
- bootmeth      2  [   ]   bootmeth_pxe              |-- pxe
- bootdev       3  [   ]   system_bootdev            `-- system-bootdev
+ bootmeth      2  [   ]   bootmeth_pxe              `-- pxe
