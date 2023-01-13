@@ -1,0 +1,61 @@
+Driver                Compatible
+--------------------------------
+bcm2835-sdhost        brcm,bcm2835-sdhost
+bcm2835_video         brcm,bcm2835-hdmi
+                      brcm,bcm2711-hdmi0
+                      brcm,bcm2708-fb
+bcm283x_pl011         brcm,bcm2835-pl011
+blk_partition
+bootmeth_distro       u-boot,distro-syslinux
+bootmeth_efi          u-boot,distro-efi
+bootmeth_pxe          u-boot,distro-pxe
+bootstd_drv           u-boot,boot-std
+efi_blk
+EFI block driver
+eth_bcmgenet          brcm,genet-v5
+                      brcm,bcm2711-genet-v5
+eth_bootdev           u-boot,bootdev-eth
+gpio_bcm2835
+iproc_rng200-rng      brcm,bcm2711-rng200
+                      brcm,iproc-rng200
+lan78xx_eth
+mmc_blk
+mmc_bootdev           u-boot,bootdev-mmc
+pci_bridge_drv        pci-bridge
+pci_generic_drv       pci-generic
+pcie_brcm             brcm,bcm2711-pcie
+pinconfig
+bcm283x_pinctrl       brcm,bcm2835-gpio
+                      brcm,bcm2711-gpio
+raspberrypi-reset     raspberrypi,firmware-reset
+root_driver
+sdhci-bcm2835         brcm,bcm2835-sdhci
+                      brcm,bcm2711-emmc2
+serial_bcm283x_mu     brcm,bcm2835-aux-uart
+serial_pl01x          arm,pl011
+                      arm,pl010
+simple_bus            simple-bus
+                      simple-mfd
+simple_panel          simple-panel
+                      auo,b133xtn01
+                      auo,b116xw03
+                      auo,b133htn01
+                      boe,nv140fhmn49
+                      lg,lb070wv8
+                      sharp,lq123p1jx31
+                      boe,nv101wxmn51
+smsc95xx_eth
+sysinfo_smbios        u-boot,sysinfo-smbios
+system_bootdev        u-boot,bootdev-system
+usb_bootdev           u-boot,bootdev-usb
+usb_dev_generic_drv
+dwc2_usb              brcm,bcm2835-usb
+                      brcm,bcm2708-usb
+                      snps,dwc2
+usb_hub               usb-hub
+usb_kbd               usb-keyboard
+usb_mass_storage      usb-mass-storage
+usb_storage_blk
+vidconsole0
+xhci_pci              xhci-pci
+

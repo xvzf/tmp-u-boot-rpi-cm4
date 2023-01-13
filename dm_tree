@@ -1,0 +1,218 @@
+ Class     Index  Probed  Driver                Name
+-----------------------------------------------------------
+ root          0  [ + ]   root_driver           root_driver
+ simple_bus    0  [ + ]   simple_bus            |-- soc
+ pinctrl       0  [ + ]   bcm283x_pinctrl       |   |-- gpio@7e200000
+ pinconfig     0  [   ]   pinconfig             |   |   |-- dpi_gpio0
+ pinconfig     1  [   ]   pinconfig             |   |   |-- emmc_gpio22
+ pinconfig     2  [   ]   pinconfig             |   |   |-- emmc_gpio34
+ pinconfig     3  [   ]   pinconfig             |   |   |-- emmc_gpio48
+ pinconfig     4  [   ]   pinconfig             |   |   |-- gpclk0_gpio4
+ pinconfig     5  [   ]   pinconfig             |   |   |-- gpclk1_gpio5
+ pinconfig     6  [   ]   pinconfig             |   |   |-- gpclk1_gpio42
+ pinconfig     7  [   ]   pinconfig             |   |   |-- gpclk1_gpio44
+ pinconfig     8  [   ]   pinconfig             |   |   |-- gpclk2_gpio6
+ pinconfig     9  [   ]   pinconfig             |   |   |-- gpclk2_gpio43
+ pinconfig    10  [   ]   pinconfig             |   |   |-- i2c0_gpio0
+ pinconfig    11  [   ]   pinconfig             |   |   |-- i2c0_gpio28
+ pinconfig    12  [   ]   pinconfig             |   |   |-- i2c0_gpio44
+ pinconfig    13  [   ]   pinconfig             |   |   |-- i2c1_gpio2
+ pinconfig    14  [   ]   pinconfig             |   |   |-- i2c1_gpio44
+ pinconfig    15  [   ]   pinconfig             |   |   |-- jtag_gpio22
+ pinconfig    16  [   ]   pinconfig             |   |   |-- pcm_gpio18
+ pinconfig    17  [   ]   pinconfig             |   |   |-- pcm_gpio28
+ pinconfig    18  [   ]   pinconfig             |   |   |-- sdhost_gpio48
+ pinconfig    19  [   ]   pinconfig             |   |   |-- spi0_gpio7
+ pinconfig    20  [   ]   pinconfig             |   |   |-- spi0_gpio35
+ pinconfig    21  [   ]   pinconfig             |   |   |-- spi1_gpio16
+ pinconfig    22  [   ]   pinconfig             |   |   |-- spi2_gpio40
+ pinconfig    23  [   ]   pinconfig             |   |   |-- uart0_gpio14
+ pinconfig    24  [   ]   pinconfig             |   |   |-- uart0_ctsrts_gpio16
+ pinconfig    25  [   ]   pinconfig             |   |   |-- uart0_ctsrts_gpio30
+ pinconfig    26  [   ]   pinconfig             |   |   |-- uart0_gpio32
+ pinconfig    27  [   ]   pinconfig             |   |   |-- uart0_gpio36
+ pinconfig    28  [   ]   pinconfig             |   |   |-- uart0_ctsrts_gpio38
+ pinconfig    29  [   ]   pinconfig             |   |   |-- uart1_gpio14
+ pinconfig    30  [   ]   pinconfig             |   |   |-- uart1_ctsrts_gpio16
+ pinconfig    31  [   ]   pinconfig             |   |   |-- uart1_gpio32
+ pinconfig    32  [   ]   pinconfig             |   |   |-- uart1_ctsrts_gpio30
+ pinconfig    33  [   ]   pinconfig             |   |   |-- uart1_gpio40
+ pinconfig    34  [   ]   pinconfig             |   |   |-- uart1_ctsrts_gpio42
+ pinconfig    35  [   ]   pinconfig             |   |   |-- gpclk0_gpio49
+ pinconfig    36  [   ]   pinconfig             |   |   |   `-- pin-gpclk
+ pinconfig    37  [   ]   pinconfig             |   |   |-- gpclk1_gpio50
+ pinconfig    38  [   ]   pinconfig             |   |   |   `-- pin-gpclk
+ pinconfig    39  [   ]   pinconfig             |   |   |-- gpclk2_gpio51
+ pinconfig    40  [   ]   pinconfig             |   |   |   `-- pin-gpclk
+ pinconfig    41  [   ]   pinconfig             |   |   |-- i2c0_gpio46
+ pinconfig    42  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    43  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    44  [   ]   pinconfig             |   |   |-- i2c1_gpio46
+ pinconfig    45  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    46  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    47  [   ]   pinconfig             |   |   |-- i2c3_gpio2
+ pinconfig    48  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    49  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    50  [   ]   pinconfig             |   |   |-- i2c3_gpio4
+ pinconfig    51  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    52  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    53  [   ]   pinconfig             |   |   |-- i2c4_gpio6
+ pinconfig    54  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    55  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    56  [   ]   pinconfig             |   |   |-- i2c4_gpio8
+ pinconfig    57  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    58  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    59  [   ]   pinconfig             |   |   |-- i2c5_gpio10
+ pinconfig    60  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    61  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    62  [   ]   pinconfig             |   |   |-- i2c5_gpio12
+ pinconfig    63  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    64  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    65  [   ]   pinconfig             |   |   |-- i2c6_gpio0
+ pinconfig    66  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    67  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    68  [   ]   pinconfig             |   |   |-- i2c6_gpio22
+ pinconfig    69  [   ]   pinconfig             |   |   |   |-- pin-sda
+ pinconfig    70  [   ]   pinconfig             |   |   |   `-- pin-scl
+ pinconfig    71  [   ]   pinconfig             |   |   |-- i2c_slave_gpio8
+ pinconfig    72  [   ]   pinconfig             |   |   |   `-- pins-i2c-slave
+ pinconfig    73  [   ]   pinconfig             |   |   |-- jtag_gpio48
+ pinconfig    74  [   ]   pinconfig             |   |   |   `-- pins-jtag
+ pinconfig    75  [   ]   pinconfig             |   |   |-- mii_gpio28
+ pinconfig    76  [   ]   pinconfig             |   |   |   `-- pins-mii
+ pinconfig    77  [   ]   pinconfig             |   |   |-- mii_gpio36
+ pinconfig    78  [   ]   pinconfig             |   |   |   `-- pins-mii
+ pinconfig    79  [   ]   pinconfig             |   |   |-- pcm_gpio50
+ pinconfig    80  [   ]   pinconfig             |   |   |   `-- pins-pcm
+ pinconfig    81  [   ]   pinconfig             |   |   |-- pwm0_0_gpio12
+ pinconfig    82  [   ]   pinconfig             |   |   |   `-- pin-pwm
+ pinconfig    83  [   ]   pinconfig             |   |   |-- pwm0_0_gpio18
+ pinconfig    84  [   ]   pinconfig             |   |   |   `-- pin-pwm
+ pinconfig    85  [   ]   pinconfig             |   |   |-- pwm1_0_gpio40
+ pinconfig    86  [   ]   pinconfig             |   |   |   `-- pin-pwm
+ pinconfig    87  [   ]   pinconfig             |   |   |-- pwm0_1_gpio13
+ pinconfig    88  [   ]   pinconfig             |   |   |   `-- pin-pwm
+ pinconfig    89  [   ]   pinconfig             |   |   |-- pwm0_1_gpio19
+ pinconfig    90  [   ]   pinconfig             |   |   |   `-- pin-pwm
+ pinconfig    91  [   ]   pinconfig             |   |   |-- pwm1_1_gpio41
+ pinconfig    92  [   ]   pinconfig             |   |   |   `-- pin-pwm
+ pinconfig    93  [   ]   pinconfig             |   |   |-- pwm0_1_gpio45
+ pinconfig    94  [   ]   pinconfig             |   |   |   `-- pin-pwm
+ pinconfig    95  [   ]   pinconfig             |   |   |-- pwm0_0_gpio52
+ pinconfig    96  [   ]   pinconfig             |   |   |   `-- pin-pwm
+ pinconfig    97  [   ]   pinconfig             |   |   |-- pwm0_1_gpio53
+ pinconfig    98  [   ]   pinconfig             |   |   |   `-- pin-pwm
+ pinconfig    99  [   ]   pinconfig             |   |   |-- rgmii_gpio35
+ pinconfig   100  [   ]   pinconfig             |   |   |   |-- pin-start-stop
+ pinconfig   101  [   ]   pinconfig             |   |   |   `-- pin-rx-ok
+ pinconfig   102  [   ]   pinconfig             |   |   |-- rgmii_irq_gpio34
+ pinconfig   103  [   ]   pinconfig             |   |   |   `-- pin-irq
+ pinconfig   104  [   ]   pinconfig             |   |   |-- rgmii_irq_gpio39
+ pinconfig   105  [   ]   pinconfig             |   |   |   `-- pin-irq
+ pinconfig   106  [   ]   pinconfig             |   |   |-- rgmii_mdio_gpio28
+ pinconfig   107  [   ]   pinconfig             |   |   |   `-- pins-mdio
+ pinconfig   108  [   ]   pinconfig             |   |   |-- rgmii_mdio_gpio37
+ pinconfig   109  [   ]   pinconfig             |   |   |   `-- pins-mdio
+ pinconfig   110  [   ]   pinconfig             |   |   |-- spi0_gpio46
+ pinconfig   111  [   ]   pinconfig             |   |   |   `-- pins-spi
+ pinconfig   112  [   ]   pinconfig             |   |   |-- spi2_gpio46
+ pinconfig   113  [   ]   pinconfig             |   |   |   `-- pins-spi
+ pinconfig   114  [   ]   pinconfig             |   |   |-- spi3_gpio0
+ pinconfig   115  [   ]   pinconfig             |   |   |   `-- pins-spi
+ pinconfig   116  [   ]   pinconfig             |   |   |-- spi4_gpio4
+ pinconfig   117  [   ]   pinconfig             |   |   |   `-- pins-spi
+ pinconfig   118  [   ]   pinconfig             |   |   |-- spi5_gpio12
+ pinconfig   119  [   ]   pinconfig             |   |   |   `-- pins-spi
+ pinconfig   120  [   ]   pinconfig             |   |   |-- spi6_gpio18
+ pinconfig   121  [   ]   pinconfig             |   |   |   `-- pins-spi
+ pinconfig   122  [   ]   pinconfig             |   |   |-- uart2_gpio0
+ pinconfig   123  [   ]   pinconfig             |   |   |   |-- pin-tx
+ pinconfig   124  [   ]   pinconfig             |   |   |   `-- pin-rx
+ pinconfig   125  [   ]   pinconfig             |   |   |-- uart2_ctsrts_gpio2
+ pinconfig   126  [   ]   pinconfig             |   |   |   |-- pin-cts
+ pinconfig   127  [   ]   pinconfig             |   |   |   `-- pin-rts
+ pinconfig   128  [   ]   pinconfig             |   |   |-- uart3_gpio4
+ pinconfig   129  [   ]   pinconfig             |   |   |   |-- pin-tx
+ pinconfig   130  [   ]   pinconfig             |   |   |   `-- pin-rx
+ pinconfig   131  [   ]   pinconfig             |   |   |-- uart3_ctsrts_gpio6
+ pinconfig   132  [   ]   pinconfig             |   |   |   |-- pin-cts
+ pinconfig   133  [   ]   pinconfig             |   |   |   `-- pin-rts
+ pinconfig   134  [   ]   pinconfig             |   |   |-- uart4_gpio8
+ pinconfig   135  [   ]   pinconfig             |   |   |   |-- pin-tx
+ pinconfig   136  [   ]   pinconfig             |   |   |   `-- pin-rx
+ pinconfig   137  [   ]   pinconfig             |   |   |-- uart4_ctsrts_gpio10
+ pinconfig   138  [   ]   pinconfig             |   |   |   |-- pin-cts
+ pinconfig   139  [   ]   pinconfig             |   |   |   `-- pin-rts
+ pinconfig   140  [   ]   pinconfig             |   |   |-- uart5_gpio12
+ pinconfig   141  [   ]   pinconfig             |   |   |   |-- pin-tx
+ pinconfig   142  [   ]   pinconfig             |   |   |   `-- pin-rx
+ pinconfig   143  [   ]   pinconfig             |   |   |-- uart5_ctsrts_gpio14
+ pinconfig   144  [   ]   pinconfig             |   |   |   |-- pin-cts
+ pinconfig   145  [   ]   pinconfig             |   |   |   `-- pin-rts
+ pinconfig   146  [   ]   pinconfig             |   |   |-- gpioout
+ pinconfig   147  [   ]   pinconfig             |   |   |-- alt0
+ pinconfig   148  [   ]   pinconfig             |   |   |-- dpi_18bit_cpadhi_gpio0
+ pinconfig   149  [   ]   pinconfig             |   |   |-- dpi_18bit_cpadhi_gpio2
+ pinconfig   150  [   ]   pinconfig             |   |   |-- dpi_18bit_gpio0
+ pinconfig   151  [   ]   pinconfig             |   |   |-- dpi_18bit_gpio2
+ pinconfig   152  [   ]   pinconfig             |   |   |-- dpi_16bit_gpio0
+ pinconfig   153  [   ]   pinconfig             |   |   |-- dpi_16bit_gpio2
+ pinconfig   154  [   ]   pinconfig             |   |   |-- dpi_16bit_cpadhi_gpio0
+ pinconfig   155  [   ]   pinconfig             |   |   |-- dpi_16bit_cpadhi_gpio2
+ pinconfig   156  [   ]   pinconfig             |   |   |-- spi0_pins
+ pinconfig   157  [   ]   pinconfig             |   |   |-- spi0_cs_pins
+ pinconfig   158  [   ]   pinconfig             |   |   |-- spi3_pins
+ pinconfig   159  [   ]   pinconfig             |   |   |-- spi3_cs_pins
+ pinconfig   160  [   ]   pinconfig             |   |   |-- spi4_pins
+ pinconfig   161  [   ]   pinconfig             |   |   |-- spi4_cs_pins
+ pinconfig   162  [   ]   pinconfig             |   |   |-- spi5_pins
+ pinconfig   163  [   ]   pinconfig             |   |   |-- spi5_cs_pins
+ pinconfig   164  [   ]   pinconfig             |   |   |-- spi6_pins
+ pinconfig   165  [   ]   pinconfig             |   |   |-- spi6_cs_pins
+ pinconfig   166  [   ]   pinconfig             |   |   |-- i2c0
+ pinconfig   167  [   ]   pinconfig             |   |   |-- i2c1
+ pinconfig   168  [   ]   pinconfig             |   |   |-- i2c3
+ pinconfig   169  [   ]   pinconfig             |   |   |-- i2c4
+ pinconfig   170  [   ]   pinconfig             |   |   |-- i2c5
+ pinconfig   171  [   ]   pinconfig             |   |   |-- i2c6
+ pinconfig   172  [   ]   pinconfig             |   |   |-- i2s
+ pinconfig   173  [ + ]   pinconfig             |   |   |-- sdio_pins
+ pinconfig   174  [   ]   pinconfig             |   |   |-- bt_pins
+ pinconfig   175  [ + ]   pinconfig             |   |   |-- uart0_pins
+ pinconfig   176  [   ]   pinconfig             |   |   |-- uart1_pins
+ pinconfig   177  [   ]   pinconfig             |   |   |-- uart2_pins
+ pinconfig   178  [   ]   pinconfig             |   |   |-- uart3_pins
+ pinconfig   179  [   ]   pinconfig             |   |   |-- uart4_pins
+ pinconfig   180  [   ]   pinconfig             |   |   |-- uart5_pins
+ pinconfig   181  [   ]   pinconfig             |   |   |-- audio_pins
+ gpio          0  [   ]   gpio_bcm2835          |   |   `-- gpio_bcm2835
+ serial        0  [ + ]   serial_pl01x          |   |-- serial@7e201000
+ simple_bus    1  [   ]   simple_bus            |   |-- avs-monitor@7d5d2000
+ rng           0  [   ]   iproc_rng200-rng      |   |-- rng@7e104000
+ simple_bus    2  [   ]   simple_bus            |   |-- firmware
+ reset         0  [   ]   raspberrypi-reset     |   |   `-- reset
+ mmc           0  [ + ]   sdhci-bcm2835         |   |-- mmcnr@7e300000
+ blk           0  [   ]   mmc_blk               |   |   |-- mmcnr@7e300000.blk
+ bootdev       0  [   ]   mmc_bootdev           |   |   `-- mmcnr@7e300000.bootdev
+ video         0  [ + ]   bcm2835_video         |   `-- fb
+ vidconsole    0  [ + ]   vidconsole0           |       `-- fb.vidconsole0
+ simple_bus    3  [ + ]   simple_bus            |-- emmc2bus
+ mmc           1  [ + ]   sdhci-bcm2835         |   `-- mmc@7e340000
+ blk           1  [ + ]   mmc_blk               |       |-- mmc@7e340000.blk
+ partition     0  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:1
+ partition     1  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:2
+ partition     2  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:3
+ partition     3  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:4
+ partition     4  [ + ]   blk_partition         |       |   |-- mmc@7e340000.blk:5
+ partition     5  [ + ]   blk_partition         |       |   `-- mmc@7e340000.blk:6
+ bootdev       1  [   ]   mmc_bootdev           |       `-- mmc@7e340000.bootdev
+ simple_bus    4  [ + ]   simple_bus            |-- scb
+ pci           0  [   ]   pcie_brcm             |   |-- pcie@7d500000
+ ethernet      0  [ + ]   eth_bcmgenet          |   `-- ethernet@7d580000
+ bootdev       2  [   ]   eth_bootdev           |       `-- ethernet@7d580000.bootdev
+ simple_bus    5  [   ]   simple_bus            |-- v3dbus
+ bootstd       0  [   ]   bootstd_drv           `-- bootstd
+ bootmeth      0  [   ]   bootmeth_distro           |-- distro
+ bootmeth      1  [   ]   bootmeth_efi              |-- efi
+ bootmeth      2  [   ]   bootmeth_pxe              |-- pxe
+ bootdev       3  [   ]   system_bootdev            `-- system-bootdev

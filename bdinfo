@@ -1,0 +1,52 @@
+arch_number = 0x0000000000000000
+TLB addr    = 0x000000003dff0000
+irq_sp      = 0x000000003db40880
+sp start    = 0x000000003db40880
+Early malloc usage: 878 / 2000
+U-Boot> bdinfo
+boot_params = 0x0000000000000100
+DRAM bank   = 0x0000000000000000
+-> start    = 0x0000000000000000
+-> size     = 0x000000003e000000
+DRAM bank   = 0x0000000000000001
+-> start    = 0x0000000040000000
+-> size     = 0x00000000bc000000
+DRAM bank   = 0x0000000000000002
+-> start    = 0x0000000100000000
+-> size     = 0x0000000080000000
+DRAM bank   = 0x0000000000000003
+-> start    = 0x0000000180000000
+-> size     = 0x0000000080000000
+flashstart  = 0x0000000000000000
+flashsize   = 0x0000000000000000
+flashoffset = 0x0000000000000000
+baudrate    = 115200 bps
+relocaddr   = 0x000000003df52000
+reloc off   = 0x000000003ded2000
+Build       = 64-bit
+current eth = ethernet@7d580000
+ethaddr     = e4:5f:01:bd:5a:4c
+IP addr     = <NULL>
+fdt_blob    = 0x000000003db40890
+new_fdt     = 0x000000003db40890
+fdt_size    = 0x000000000000d4e0
+Video       = fb active
+FB base     = 0x000000003eac2000
+FB size     = 592x448x32
+lmb_dump_all:
+ memory.cnt  = 0x3
+ memory[0]	[0x0-0x3dffffff], 0x3e000000 bytes flags: 0
+ memory[1]	[0x40000000-0xfbffffff], 0xbc000000 bytes flags: 0
+ memory[2]	[0x100000000-0x1ffffffff], 0x100000000 bytes flags: 0
+ reserved.cnt  = 0x4
+ reserved[0]	[0x0-0xfff], 0x00001000 bytes flags: 0
+ reserved[1]	[0x3db3c400-0x3dffffff], 0x004c3c00 bytes flags: 0
+ reserved[2]	[0x3ef62b00-0x3ef62eff], 0x00000400 bytes flags: 4
+ reserved[3]	[0x3ef62f40-0x3ef630db], 0x0000019c bytes flags: 4
+devicetree  = board
+arch_number = 0x0000000000000000
+TLB addr    = 0x000000003dff0000
+irq_sp      = 0x000000003db40880
+sp start    = 0x000000003db40880
+Early malloc usage: 878 / 2000
+
