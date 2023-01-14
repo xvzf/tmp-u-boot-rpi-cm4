@@ -25,12 +25,10 @@ bootcmd_nvme0=devnum=0; run nvme_boot
 bootcmd_pxe=run boot_net_usb_start; run boot_pci_enum; dhcp; if pxe get; then pxe boot; fi
 bootcmd_usb0=devnum=0; run usb_boot
 bootdelay=2
-bootfstype=fat
 cpu=armv8
 dhcpuboot=usb start; dhcp u-boot.uimg; bootm
 distro_bootcmd=setenv nvme_need_init; for target in ${boot_targets}; do run bootcmd_${target}; done
 efi_dtb_prefixes=/ /dtb/ /dtb/current/
-ethact=ethernet@7d580000
 ethaddr=e4:5f:01:bd:5a:4c
 fdt_addr=2eff2b00
 fdt_addr_r=0x02600000
@@ -44,7 +42,6 @@ loadaddr=0x1000000
 mmc_boot=if mmc dev ${devnum}; then devtype=mmc; run scan_dev_for_boot_part; fi
 nvme_boot=run boot_pci_enum; run nvme_init; if nvme dev ${devnum}; then devtype=nvme; run scan_dev_for_boot_part; fi
 nvme_init=if ${nvme_need_init}; then setenv nvme_need_init false; nvme scan; fi
-nvme_need_init=false
 preboot=pci enum; usb start;
 pxefile_addr_r=0x02500000
 ramdisk_addr_r=0x02700000
@@ -63,5 +60,4 @@ usb_boot=usb start; if usb dev ${devnum}; then devtype=usb; run scan_dev_for_boo
 usbethaddr=e4:5f:01:bd:5a:4c
 vendor=raspberrypi
 
-Environment size: 4414/16380 bytes
-
+Environment size: 4353/16380 bytes
